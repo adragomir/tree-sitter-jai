@@ -45,7 +45,7 @@ module.exports = grammar({
       $.unary_expression,
       $.cast_expression,
       $.parenthesis,
-      //$.built_in_type,
+      $.built_in_type,
       $.uninitialized_token,
       $.identifier,
       $.func_call,
@@ -244,7 +244,6 @@ module.exports = grammar({
       "]"
     ),
 
-    /*
     built_in_type: $ => token(choice(
       'bool',
       'float32',
@@ -263,7 +262,6 @@ module.exports = grammar({
       'u64',
       'void',
     )),
-*/
 
       argument_name: $ => seq(
         $.identifier,
