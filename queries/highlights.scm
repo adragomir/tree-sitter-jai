@@ -1,26 +1,28 @@
 ; highlights.scm
 
 "if" @keyword
+"case" @keyword
 "return" @keyword
+"defer" @keyword
 "else" @keyword
 "for" @keyword
 "while" @keyword
 "using" @keyword
-"struct" @type
+"struct" @keyword
 
 (string_literal) @string
-(built_in_type) @type
+(here_string) @string
 (number) @number
-(function_definition name: (identifier) @function)
-(struct_decl name: (identifier) @type.user)
-(constant_value_definition name: (identifier) @constant)
+(float_literal) @number
+(scientific_notation) @number
+(built_in_type) @type
+(named_decl name:(identifier) @function (function_definition))
+(named_decl name:(identifier) @type.user (struct_definition))
+(named_decl name:(identifier) @constant (const_initializer))
+(named_decl name:(identifier) @variable (built_in_type))
+(named_decl name:(identifier) @variable (variable_initializer))
 (inline_comment) @comment
 (block_comment) @comment
-(cast_expression name: (identifier) @function)
-(function_call name: (variable_reference) @function)
-(variable_decl name: (identifier) @variable)
-(variable_decl names: (identifier) @variable)
-(implicit_variable_decl name: (identifier) @variable)
-(parameter_decl name: (identifier) @variable)
-(for_loop name: (identifier) @variable)
-(for_loop names: (identifier) @variable)
+(func_call name:(identifier) @function)
+; (parameter name:(identifier) @variable)
+; (for_loop name:(identifier) @variable)
