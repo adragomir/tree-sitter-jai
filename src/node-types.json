@@ -16,6 +16,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -77,6 +81,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -162,6 +170,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -223,6 +235,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -283,13 +299,28 @@
   {
     "type": "assert_directive",
     "named": true,
-    "fields": {},
+    "fields": {
+      "token": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "#assert",
+            "named": false
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
       "required": true,
       "types": [
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -354,6 +385,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -424,6 +459,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -485,6 +524,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -564,6 +607,10 @@
         },
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -692,6 +739,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -798,6 +849,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -859,6 +914,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -953,6 +1012,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -1014,6 +1077,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -1084,6 +1151,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -1145,6 +1216,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -1215,6 +1290,10 @@
             "named": true
           },
           {
+            "type": "boolean_literal",
+            "named": true
+          },
+          {
             "type": "built_in_type",
             "named": true
           },
@@ -1276,6 +1355,10 @@
           },
           {
             "type": "member_access_nothing",
+            "named": true
+          },
+          {
+            "type": "null_token",
             "named": true
           },
           {
@@ -1341,6 +1424,10 @@
             "named": true
           },
           {
+            "type": "boolean_literal",
+            "named": true
+          },
+          {
             "type": "built_in_type",
             "named": true
           },
@@ -1405,6 +1492,10 @@
             "named": true
           },
           {
+            "type": "null_token",
+            "named": true
+          },
+          {
             "type": "number",
             "named": true
           },
@@ -1463,13 +1554,28 @@
   {
     "type": "code_directive",
     "named": true,
-    "fields": {},
+    "fields": {
+      "token": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "#code",
+            "named": false
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
       "required": true,
       "types": [
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -1541,6 +1647,10 @@
           "named": true
         },
         {
+          "type": "null_token",
+          "named": true
+        },
+        {
           "type": "number",
           "named": true
         },
@@ -1608,6 +1718,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -1669,6 +1783,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -1739,6 +1857,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -1800,6 +1922,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -1883,6 +2009,10 @@
         },
         {
           "type": "block_end",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -2011,6 +2141,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -2129,6 +2263,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "break_statement",
           "named": true
         },
@@ -2254,6 +2392,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -2350,7 +2492,18 @@
   {
     "type": "deprecated_directive",
     "named": true,
-    "fields": {},
+    "fields": {
+      "token": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "#deprecated",
+            "named": false
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": false,
       "required": false,
@@ -2384,6 +2537,10 @@
         },
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -2512,6 +2669,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -2623,6 +2784,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -2688,6 +2853,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -2767,6 +2936,10 @@
         },
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -2902,6 +3075,10 @@
           "named": true
         },
         {
+          "type": "null_token",
+          "named": true
+        },
+        {
           "type": "number",
           "named": true
         },
@@ -3009,6 +3186,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -3073,6 +3254,10 @@
           "named": true
         },
         {
+          "type": "null_token",
+          "named": true
+        },
+        {
           "type": "number",
           "named": true
         },
@@ -3130,7 +3315,18 @@
   {
     "type": "foreign_directive",
     "named": true,
-    "fields": {},
+    "fields": {
+      "token": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "#foreign",
+            "named": false
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
       "required": false,
@@ -3156,6 +3352,10 @@
         "types": [
           {
             "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "boolean_literal",
             "named": true
           },
           {
@@ -3220,6 +3420,10 @@
           },
           {
             "type": "member_access_nothing",
+            "named": true
+          },
+          {
+            "type": "null_token",
             "named": true
           },
           {
@@ -3355,6 +3559,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "break_statement",
           "named": true
         },
@@ -3484,6 +3692,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -3602,6 +3814,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "break_statement",
           "named": true
         },
@@ -3731,6 +3947,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -3853,6 +4073,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "break_statement",
           "named": true
         },
@@ -3978,6 +4202,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -4084,6 +4312,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -4145,6 +4377,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -4215,6 +4451,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -4276,6 +4516,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -4347,6 +4591,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "import_qualifier",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -4359,6 +4613,10 @@
         "types": [
           {
             "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "boolean_literal",
             "named": true
           },
           {
@@ -4427,6 +4685,10 @@
           },
           {
             "type": "member_access_nothing",
+            "named": true
+          },
+          {
+            "type": "null_token",
             "named": true
           },
           {
@@ -4527,6 +4789,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -4588,6 +4854,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -4658,6 +4928,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -4719,6 +4993,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -4815,6 +5093,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -4880,6 +5162,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -4954,6 +5240,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -5015,6 +5305,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -5100,6 +5394,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -5161,6 +5459,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -5235,6 +5537,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -5296,6 +5602,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -5402,6 +5712,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "break_statement",
           "named": true
         },
@@ -5527,6 +5841,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -5633,6 +5951,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -5694,6 +6016,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -5764,6 +6090,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -5825,6 +6155,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -5895,6 +6229,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -5956,6 +6294,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -6023,6 +6365,10 @@
       "types": [
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -6094,6 +6440,10 @@
           "named": true
         },
         {
+          "type": "null_token",
+          "named": true
+        },
+        {
           "type": "number",
           "named": true
         },
@@ -6153,7 +6503,7 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
@@ -6170,6 +6520,10 @@
         },
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -6301,6 +6655,10 @@
           "named": true
         },
         {
+          "type": "null_token",
+          "named": true
+        },
+        {
           "type": "number",
           "named": true
         },
@@ -6330,6 +6688,10 @@
         },
         {
           "type": "run_statement",
+          "named": true
+        },
+        {
+          "type": "run_statement_token",
           "named": true
         },
         {
@@ -6416,6 +6778,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "break_statement",
           "named": true
         },
@@ -6541,6 +6907,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -6647,6 +7017,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -6708,6 +7082,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -6831,6 +7209,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -6892,6 +7274,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -6962,6 +7348,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -7027,6 +7417,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -7112,6 +7506,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -7173,6 +7571,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -7236,7 +7638,7 @@
     "fields": {},
     "children": {
       "multiple": false,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "deprecated_directive",
@@ -7244,6 +7646,10 @@
         },
         {
           "type": "foreign_directive",
+          "named": true
+        },
+        {
+          "type": "other_trailing_directive",
           "named": true
         }
       ]
@@ -7274,6 +7680,10 @@
       "types": [
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -7338,6 +7748,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -7408,6 +7822,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -7469,6 +7887,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -7543,6 +7965,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -7604,6 +8030,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -7705,6 +8135,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -7766,6 +8200,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -7833,6 +8271,10 @@
       "types": [
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -7904,6 +8346,10 @@
           "named": true
         },
         {
+          "type": "null_token",
+          "named": true
+        },
+        {
           "type": "number",
           "named": true
         },
@@ -7971,6 +8417,10 @@
           "named": true
         },
         {
+          "type": "boolean_literal",
+          "named": true
+        },
+        {
           "type": "built_in_type",
           "named": true
         },
@@ -8032,6 +8482,10 @@
         },
         {
           "type": "member_access_nothing",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -8111,6 +8565,10 @@
         },
         {
           "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_literal",
           "named": true
         },
         {
@@ -8239,6 +8697,10 @@
         },
         {
           "type": "named_decl",
+          "named": true
+        },
+        {
+          "type": "null_token",
           "named": true
         },
         {
@@ -8573,6 +9035,10 @@
     "named": false
   },
   {
+    "type": "boolean_literal",
+    "named": true
+  },
+  {
     "type": "break",
     "named": false
   },
@@ -8649,6 +9115,10 @@
     "named": false
   },
   {
+    "type": "import_qualifier",
+    "named": true
+  },
+  {
     "type": "inline",
     "named": false
   },
@@ -8669,6 +9139,10 @@
     "named": true
   },
   {
+    "type": "null_token",
+    "named": true
+  },
+  {
     "type": "number",
     "named": true
   },
@@ -8678,6 +9152,10 @@
   },
   {
     "type": "operator_like_directive",
+    "named": true
+  },
+  {
+    "type": "other_trailing_directive",
     "named": true
   },
   {
@@ -8691,6 +9169,10 @@
   {
     "type": "return",
     "named": false
+  },
+  {
+    "type": "run_statement_token",
+    "named": true
   },
   {
     "type": "scientific_notation",

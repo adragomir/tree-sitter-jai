@@ -41,12 +41,14 @@ module.exports = grammar({
             $.float_literal,
             $.scientific_notation,
             $.string_literal,
+            $.boolean_literal, 
             $.binary_expression,
             $.unary_expression,
             $.cast_expression,
             $.parenthesis,
             $.built_in_type,
             $.uninitialized_token,
+            $.null_token,
             $.identifier,
             $.func_call,
             //$.array_literal,
@@ -129,6 +131,7 @@ module.exports = grammar({
             field('body', choice($.imperative_scope, $._expression))
         )),
         uninitialized_token: $ => "---",
+        null_token: $ => "null", 
 
         remove_statement: $ => seq(
             "remove",
@@ -145,6 +148,9 @@ module.exports = grammar({
             )),
             '"',
         ),
+        boolean_literal: $ => token(choice(
+            "true", "false", 
+        )), 
 
         escape_sequence: $ => token(prec(1, seq(
             '\\',
@@ -163,7 +169,7 @@ module.exports = grammar({
         ),
 
         assert_directive: $ => seq(
-            "#assert",
+            field('token', "#assert"),
             $._expression,
             optional($.string_literal),
             ";",
@@ -172,8 +178,17 @@ module.exports = grammar({
         file_scope_directive: $ => '#scope_file',
         export_scope_directive: $ => '#scope_export',
 
+        import_qualifier: $ => token(choice(
+            "dir", "string", "file"
+        )), 
         import_statement: $ =>  prec(1, seq( // precedence over unary import
             '#import',
+            optional(
+                seq(
+                    ",", 
+                    $.import_qualifier, 
+                )
+            ), 
             field("name", $.string_literal),
             ";"
         )),
@@ -371,28 +386,30 @@ module.exports = grammar({
 
 
         deprecated_directive: $ => prec.left(seq(
-            "#deprecated",
+            field('token', "#deprecated"),
             optional($.string_literal),
         )),
+
+        other_trailing_directive: $ => token(choice(
+            "#c_call",
+            "#expand",
+            "#compiler",
+            "#no_abc",
+            "#symmetric",
+            "#runtime_support",
+            "#intrinsic",
+            "#modify",
+            "#no_alias",
+        )), 
 
         trailing_directive: $ =>choice(
             $.foreign_directive,
             $.deprecated_directive,
-            token(choice(
-                "#c_call",
-                "#expand",
-                "#compiler",
-                "#no_abc",
-                "#symmetric",
-                "#runtime_support",
-                "#intrinsic",
-                "#modify",
-                "#no_alias",
-            ))
+            $.other_trailing_directive, 
         ),
   
         code_directive: $ => prec.left( seq( 
-            "#code",
+            field('token', "#code"),
             choice($._expression, $.imperative_scope, $._named_decl_expression) // you can probably put a lot of other things here.
         )),
 
@@ -530,8 +547,10 @@ module.exports = grammar({
             $._expression
         )),
 
+        run_statement_token: $ => token(choice("#run", "#run_and_insert", "#add_context")), 
+
         run_statement: $ => prec(1, seq(
-            token(choice("#run", "#run_and_insert", "#add_context")),
+            $.run_statement_token, 
             $._statement,
         )),
 
@@ -587,7 +606,7 @@ module.exports = grammar({
         switch: $ => prec.right( seq( $._expression, "==", $.imperative_scope)),
 
         foreign_directive: $ => prec.left(seq(
-            "#foreign",
+            field('token', "#foreign"),
             optional(
                 seq(
                     $.identifier,
