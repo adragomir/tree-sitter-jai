@@ -4,7 +4,7 @@
 
 enum TokenType
 {
-    here_string
+    here_string_literal
 };
 
 
@@ -109,7 +109,7 @@ extern "C" bool tree_sitter_jai_external_scanner_scan(void* payload, TSLexer * l
         {
             lexer->advance(lexer, false);
             lexer->mark_end(lexer);
-            lexer->result_symbol = here_string;
+            lexer->result_symbol = here_string_literal;
             return true;
         }
 

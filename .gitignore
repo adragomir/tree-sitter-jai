@@ -1,3 +1,4 @@
 .ccls-cache
 node_modules
 build
+tree-sitter-jai.wasm
